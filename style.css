@@ -1,21 +1,40 @@
 .item {
-    transition-duration: 2s;
+    /* transition-duration: 2s;
     -webkit-transition-duration: 2s;
     text-align: center;
     position: relative;
     left: 0;
     float: left;
     z-index: 1;
+    
+    -webkit-transition: 2s;
+    position: absolute; */
+    display: block;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+    top: 0;
+    position: absolute;
+    padding: 0 4%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+
+    /* my set styles*/
     webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    -webkit-transition: 2s;
-    display: flex;
 }
 
 .item:hover {
     transform: translateY(-50%);
-    -ms-transform: translateY(-50%); /* prefix for IE 9 */
-    -webkit-transform: translateX(-50%); /* prefix for Safari and Chrome */
+    -ms-transform: translateY(-50%); 
+    -webkit-transform: translateX(-50%); 
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
@@ -30,7 +49,6 @@
 img {
     height: 150px;
     width: 150px;
-    margin: 25px;
 }
 
 img:hover {
@@ -42,4 +60,5 @@ img:hover {
 .wrapper {
     padding: 40px;
     width: 100%;
+    position: relative;
 }
