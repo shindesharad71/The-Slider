@@ -1,0 +1,45 @@
+.item {
+    transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    text-align: center;
+    position: relative;
+    left: 0;
+    float: left;
+    z-index: 1;
+    webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition: 2s;
+}
+
+.item:hover {
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%); /* prefix for IE 9 */
+    -webkit-transform: translateX(-50%); /* prefix for Safari and Chrome */
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.item::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    margin: 25px;
+}
+
+img:hover {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    /* prefix for IE 9 */
+    -webkit-transform: scale(1.5);
+    /* prefix for Safari and Chrome */
+}
+
+.wrapper {
+    padding: 40px;
+}
