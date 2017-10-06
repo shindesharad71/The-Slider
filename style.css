@@ -9,6 +9,7 @@
     webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     -webkit-transition: 2s;
+    display: flex;
 }
 
 .item:hover {
@@ -23,7 +24,7 @@
 .item::after {
     clear: both;
     content: "";
-    display: table
+    display: table;
 }
 
 img {
