@@ -32,6 +32,11 @@
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
+    webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    -webkit-transition: 2s;
 }
 
 .item::after {
@@ -47,13 +52,10 @@ img {
 
 img:hover {
     transform: scale(1.2);
-    -ms-transform: scale(1.2); /* prefix for IE 9 */
-    -webkit-transform: scale(1.2); /* prefix for Safari and Chrome */
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2);
 }
 
 .wrapper {
-    padding: 140px;
-    width: 100%;
     position: relative;
-    overflow: hidden;
 }
