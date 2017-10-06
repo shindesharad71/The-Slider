@@ -1,20 +1,13 @@
 .item {
-    /* transition-duration: 2s;
-    -webkit-transition-duration: 2s;
-    text-align: center;
-    position: relative;
     left: 0;
     float: left;
-    z-index: 1;
-    
-    -webkit-transition: 2s;
-    position: absolute; */
     display: block;
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 30%;
     top: 0;
+    z-index: 1;
     position: absolute;
     padding: 0 4%;
     -webkit-backface-visibility: hidden;
@@ -25,10 +18,11 @@
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
-
-    /* my set styles*/
     webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+    transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    -webkit-transition: 2s;
 }
 
 .item:hover {
@@ -58,7 +52,8 @@ img:hover {
 }
 
 .wrapper {
-    padding: 40px;
+    padding: 140px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
