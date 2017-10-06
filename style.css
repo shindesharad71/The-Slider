@@ -33,13 +33,12 @@ img {
 }
 
 img:hover {
-    transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    /* prefix for IE 9 */
-    -webkit-transform: scale(1.5);
-    /* prefix for Safari and Chrome */
+    transform: scale(1.2);
+    -ms-transform: scale(1.2); /* prefix for IE 9 */
+    -webkit-transform: scale(1.2); /* prefix for Safari and Chrome */
 }
 
 .wrapper {
     padding: 40px;
+    width: 100%;
 }
